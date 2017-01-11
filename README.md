@@ -28,7 +28,7 @@ The code can be run by either using the `java` command directly...
 
     gradle clean buildRun
 
-(Again, the `clean` target is optional, and the `buildRun` target will, as the name suggests, build the code should this have not already been done, prior to running).
+Again, the `clean` target is optional, and the `buildRun` target will, as the name suggests, build the code should this have not already been done, prior to running.
 
 Either way, the final couple of lines of the eventual output should be similar to the following...
 
@@ -46,7 +46,7 @@ To verify the api has been successfully deployed, use `curl` to perform an HTTP 
     
     {"id":200,"name":"person-name","age":37,"homeAddressModel":{"houseNumber":1,"houseName":"house-name","addressLine1":"home-address-line-1","addressLine2":"home-address-line-2","addressLine3":"home-address-line-3","town":null,"postcode":"postcode","county":"county","country":"country"},"workAddressModel":null}
     
-(Remove the `-i` flag and pipe the output through `json_pp` if an intented JSON message). 
+Remove the `-i` flag and pipe the output through `json_pp` if an appropriately intented JSON message is required. 
 
 To verify a simulated HTTP `Internal Server Error` response...
 
